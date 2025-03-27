@@ -1,0 +1,142 @@
+{
+  "$schema": "https://json.schemastore.org/boyka-config.json",
+  "ui": {
+    "logging": {
+      "enable": true,
+      "path": "./logs"
+    },
+    "screenshot": {
+      "enabled": true,
+      "extension": "png",
+      "path": "./screenshots",
+      "prefix": "SCR"
+    },
+    "timeout": {
+      "implicit_wait": 1,
+      "explicit_wait": 10,
+      "highlight_delay": 100,
+      "page_load_timeout": 30,
+      "script_timeout": 30
+    },
+    "delay": {
+      "before_swipe": 700
+    },
+    "web": {
+      "test_sauce_web": {
+        "browser": "CHROME",
+        "base_url": "https://www.saucedemo.com/",
+        "custom_size": {
+          "width": 1920,
+          "height": 1080
+        },
+        "headless": false,
+        "highlight": true,
+        "resize": "MAXIMIZED",
+        "page_load_strategy": "NORMAL",
+        "target": "LOCAL",
+        "protocol": "HTTP",
+        "version": "stable"
+      }
+    },
+    "mobile": {
+      "test_sauce_android": {
+        "server": {
+          "target": "LOCAL",
+          "session_override": true,
+          "timeout": 30,
+          "logging": {
+            "level": "INFO"
+          },
+          "port": 4723,
+          "driver": "UI_AUTOMATOR"
+        },
+        "device": {
+          "accept_alerts": true,
+          "clear_files": true,
+          "clear_logs": true,
+          "os": "ANDROID",
+          "swipe": {
+            "distance": 75,
+            "max_swipe_until_found": 5,
+            "speed": "NORMAL"
+          },
+          "type": "VIRTUAL",
+          "application": {
+            "type": "HYBRID",
+            "install_timeout": 30,
+            "wait_timeout": 30,
+            "path": "/apps/sauce-demo.apk",
+            "wait_activity": "com.swaglabsmobileapp.MainActivity"
+          },
+          "name": "Pixel 8 Pro",
+          "version": "14",
+          "virtual_device": {
+            "connect_keyboard": true,
+            "headless": false,
+            "launch_timeout": 120,
+            "ready_timeout": 60,
+            "name": "Pixel_8_Pro"
+          },
+          "video": {
+            "enabled": true,
+            "path": "./videos",
+            "prefix": "VID",
+            "android": {
+              "bit_rate": 4
+            }
+          }
+        }
+      },
+      "test_sauce_ios": {
+        "server": {
+          "target": "LOCAL",
+          "session_override": true,
+          "timeout": 30,
+          "logging": {
+            "level": "INFO"
+          },
+          "port": 4725,
+          "driver": "XCUI"
+        },
+        "device": {
+          "accept_alerts": true,
+          "clear_files": true,
+          "clear_logs": true,
+          "os": "IOS",
+          "swipe": {
+            "distance": 75,
+            "max_swipe_until_found": 5,
+            "speed": "NORMAL"
+          },
+          "type": "VIRTUAL",
+          "application": {
+            "type": "HYBRID",
+            "install_timeout": 30,
+            "wait_timeout": 30,
+            "path": "/apps/sauce-demo.zip"
+          },
+          "name": "iPhone 16",
+          "version": "18.3",
+          "typing_speed": 50,
+          "wda": {
+            "local_port": 8100,
+            "connection_timeout": 60,
+            "launch_timeout": 60,
+            "startup_retries": 2,
+            "startup_retry_interval": 10
+          },
+          "video": {
+            "enabled": true,
+            "path": "./videos",
+            "prefix": "VID",
+            "ios": {
+              "codec": "mpeg4",
+              "fps": 10,
+              "quality": "MEDIUM"
+            }
+          }
+        }
+      }
+    }
+  }
+}
