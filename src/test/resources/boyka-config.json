@@ -138,5 +138,22 @@
         }
       }
     }
+  },
+  "api": {
+    "test_browser_stack": {
+      "base_uri": "https://api-cloud.browserstack.com",
+      "base_path": "/app-automate",
+      "connection_timeout": 5,
+      "logging": {
+        "enable": true,
+        "request": true,
+        "response": true
+      },
+      "read_timeout": 5,
+      "write_timeout": 5,
+      "schema_path": "./schema",
+      "validate_ssl": true,
+      "verify_host_name": true
+    }
   }
 }

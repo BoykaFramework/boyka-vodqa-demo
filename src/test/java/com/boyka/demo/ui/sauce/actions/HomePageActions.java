@@ -1,10 +1,10 @@
-package com.boyka.demo.web.actions;
+package com.boyka.demo.ui.sauce.actions;
 
-import static com.boyka.demo.web.pages.CheckoutInfoPage.checkoutInfoPage;
-import static com.boyka.demo.web.pages.CheckoutPage.checkoutPage;
-import static com.boyka.demo.web.pages.CheckoutReviewPage.checkoutReviewPage;
-import static com.boyka.demo.web.pages.CheckoutSuccessPage.successPage;
-import static com.boyka.demo.web.pages.HomePage.homePage;
+import static com.boyka.demo.ui.sauce.pages.CheckoutInfoPage.checkoutInfoPage;
+import static com.boyka.demo.ui.sauce.pages.CheckoutPage.checkoutPage;
+import static com.boyka.demo.ui.sauce.pages.CheckoutReviewPage.checkoutReviewPage;
+import static com.boyka.demo.ui.sauce.pages.CheckoutSuccessPage.successPage;
+import static com.boyka.demo.ui.sauce.pages.HomePage.homePage;
 import static io.github.boykaframework.actions.elements.ClickableActions.withMouse;
 import static io.github.boykaframework.actions.elements.ElementActions.onElement;
 import static io.github.boykaframework.actions.elements.FingerActions.withFinger;
@@ -18,7 +18,7 @@ import static java.util.Objects.isNull;
 import java.text.DecimalFormat;
 import java.text.NumberFormat;
 
-import com.boyka.demo.web.pages.components.ProductItem;
+import com.boyka.demo.ui.sauce.pages.components.ProductItem;
 import io.github.boykaframework.enums.PlatformType;
 import lombok.SneakyThrows;
 import lombok.experimental.UtilityClass;

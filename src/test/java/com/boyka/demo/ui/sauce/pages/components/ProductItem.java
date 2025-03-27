@@ -1,4 +1,4 @@
-package com.boyka.demo.web.pages.components;
+package com.boyka.demo.ui.sauce.pages.components;
 
 import static io.appium.java_client.AppiumBy.accessibilityId;
 import static org.openqa.selenium.By.cssSelector;

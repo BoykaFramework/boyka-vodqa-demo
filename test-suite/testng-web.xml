@@ -5,21 +5,21 @@
         <parameter name="platformType" value="WEB"/>
         <parameter name="configKey" value="test_sauce_web"/>
         <classes>
-            <class name="com.boyka.demo.web.SauceDemoTest"/>
+            <class name="com.boyka.demo.ui.sauce.SauceDemoTest"/>
         </classes>
     </test>
     <test name="Sample Test Android" enabled="false">
         <parameter name="platformType" value="ANDROID"/>
         <parameter name="configKey" value="test_sauce_android"/>
         <classes>
-            <class name="com.boyka.demo.web.SauceDemoTest"/>
+            <class name="com.boyka.demo.ui.sauce.SauceDemoTest"/>
         </classes>
     </test>
     <test name="Sample Test iOS">
         <parameter name="platformType" value="IOS"/>
         <parameter name="configKey" value="test_sauce_ios"/>
         <classes>
-            <class name="com.boyka.demo.web.SauceDemoTest"/>
+            <class name="com.boyka.demo.ui.sauce.SauceDemoTest"/>
         </classes>
     </test>
 </suite>

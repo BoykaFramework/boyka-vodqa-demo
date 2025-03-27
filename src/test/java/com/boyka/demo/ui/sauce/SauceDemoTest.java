@@ -1,8 +1,8 @@
-package com.boyka.demo.web;
+package com.boyka.demo.ui.sauce;
 
-import static com.boyka.demo.web.actions.HomePageActions.verifyProductPurchase;
-import static com.boyka.demo.web.actions.LoginActions.verifyLogin;
-import static com.boyka.demo.web.actions.LoginActions.verifyLogout;
+import static com.boyka.demo.ui.sauce.actions.HomePageActions.verifyProductPurchase;
+import static com.boyka.demo.ui.sauce.actions.LoginActions.verifyLogin;
+import static com.boyka.demo.ui.sauce.actions.LoginActions.verifyLogout;
 import static io.github.boykaframework.actions.drivers.WindowActions.onWindow;
 import static io.github.boykaframework.manager.ParallelSession.clearSession;
 import static io.github.boykaframework.manager.ParallelSession.createSession;

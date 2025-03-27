@@ -1,7 +1,7 @@
-package com.boyka.demo.web.actions;
+package com.boyka.demo.ui.sauce.actions;
 
-import static com.boyka.demo.web.pages.HomePage.homePage;
-import static com.boyka.demo.web.pages.LoginPage.loginPage;
+import static com.boyka.demo.ui.sauce.pages.HomePage.homePage;
+import static com.boyka.demo.ui.sauce.pages.LoginPage.loginPage;
 import static io.github.boykaframework.actions.elements.ClickableActions.withMouse;
 import static io.github.boykaframework.actions.elements.ElementActions.onElement;
 import static io.github.boykaframework.actions.elements.FingerActions.withFinger;

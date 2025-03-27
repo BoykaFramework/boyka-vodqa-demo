@@ -1,4 +1,4 @@
-package com.boyka.demo.web.pages;
+package com.boyka.demo.ui.sauce.pages;
 
 import static io.appium.java_client.AppiumBy.accessibilityId;
 import static io.appium.java_client.AppiumBy.androidUIAutomator;
@@ -7,7 +7,7 @@ import static org.openqa.selenium.By.cssSelector;
 import static org.openqa.selenium.By.id;
 import static org.openqa.selenium.By.linkText;
 
-import com.boyka.demo.web.pages.components.ProductItem;
+import com.boyka.demo.ui.sauce.pages.components.ProductItem;
 import io.github.boykaframework.builders.Locator;
 import lombok.Getter;
 
