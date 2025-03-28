@@ -117,6 +117,11 @@ public class HomePageActions {
     private static void verifySuccessPage () {
         final var expectedHeader = PLATFORM_TYPE == WEB ? "Thank you for your order!" : "THANK YOU FOR YOU ORDER";
 
+        if (PLATFORM_TYPE != WEB) {
+            onElement (successPage ().getBackHome ()).verifyIsDisplayed ()
+                .isTrue ();
+        }
+        
         onElement (successPage ().getSuccessHeader ()).verifyText ()
             .isEqualTo (expectedHeader);
         onElement (successPage ().getSuccessMessage ()).verifyText ()
