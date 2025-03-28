@@ -36,7 +36,7 @@ public class LoginActions {
     }
 
     public static void verifyLogout () {
-        if (PLATFORM_TYPE != WEB) {
+        if (PLATFORM_TYPE == WEB) {
             withMouse (homePage ().getMenu ()).click ();
         } else {
             withFinger (homePage ().getMenu ()).tap ();
