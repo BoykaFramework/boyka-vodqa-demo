@@ -29,7 +29,7 @@ public class CheckoutReviewPage {
         // Singleton class.
     }
 
-    public Locator getTotalPrice (String price) {
+    public Locator getTotalPrice (final String price) {
         return Locator.buildLocator ()
             .name ("Total price")
             .android (androidUIAutomator (format ("new UiSelector().text(\"Total: {0}\")", price)))

@@ -41,12 +41,6 @@ public class ProductItem {
             .build ();
     }
 
-    public Locator getTitle () {
-        return getTitles ().toBuilder ()
-            .parent (getContainer ())
-            .build ();
-    }
-
     public Locator getTitles () {
         return Locator.buildLocator ()
             .name ("Product Item Name")

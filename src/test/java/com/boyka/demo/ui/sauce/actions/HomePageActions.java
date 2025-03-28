@@ -49,7 +49,7 @@ public class HomePageActions {
     }
 
     private static ProductItem findProductItem (final String name) {
-        var pageCount = PLATFORM_TYPE == WEB ? 1 : 3;
+        final var pageCount = PLATFORM_TYPE == WEB ? 1 : 3;
         for (var page = 1; page <= pageCount; page++) {
             final var items = onElement (homePage ().getProductItems ()
                 .getTitles ()).itemList ();
@@ -115,7 +115,7 @@ public class HomePageActions {
     }
 
     private static void verifySuccessPage () {
-        var expectedHeader = PLATFORM_TYPE == WEB ? "Thank you for your order!" : "THANK YOU FOR YOU ORDER";
+        final var expectedHeader = PLATFORM_TYPE == WEB ? "Thank you for your order!" : "THANK YOU FOR YOU ORDER";
 
         onElement (successPage ().getSuccessHeader ()).verifyText ()
             .isEqualTo (expectedHeader);
