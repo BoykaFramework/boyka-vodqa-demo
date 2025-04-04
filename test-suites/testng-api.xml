@@ -3,7 +3,17 @@
 <suite name="Boyka Framework Sample API Suite" verbose="2">
     <test name="Sample Test API">
         <classes>
-            <class name="com.boyka.demo.api.BrowserStackTest"/>
+            <class name="com.boyka.demo.api.RestfulBookerEndToEndTests">
+                <methods>
+                    <include name="testCreateBooking"/>
+                    <include name="testGetBooking"/>
+                    <include name="testUpdateBooking"/>
+                    <include name="testUpdatePartialBooking"/>
+                    <include name="testDeleteBooking"/>
+                    <include name="testDeletedBooking"/>
+                    <include name="testJsonSchemaFileException"/>
+                </methods>
+            </class>
         </classes>
     </test>
 </suite>

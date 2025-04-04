@@ -202,9 +202,9 @@
     }
   },
   "api": {
-    "test_browser_stack": {
-      "base_uri": "https://api-cloud.browserstack.com",
-      "base_path": "/app-automate",
+    "test_restfulbooker": {
+      "base_uri": "https://restful-booker.herokuapp.com",
+      "base_path": "",
       "connection_timeout": 5,
       "logging": {
         "enable": true,
